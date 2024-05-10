@@ -1,0 +1,8 @@
+@font-face {
+    font-family: pinar;
+    src: url('../font/pinar.ttf');
+}
+
+* {
+    font-family: pinar, serif;
+}
