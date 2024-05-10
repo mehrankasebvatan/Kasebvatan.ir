@@ -1,0 +1,56 @@
+{% extends 'home/base.html' %}
+{% load static %}
+{% block title %}
+    PORTFOLIO
+{% endblock title %}
+{% block content %}
+
+    <section class="py-5">
+        <div class="container px-5 mb-5">
+            <div class="text-center mb-5">
+                <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">پروژه ها</span></h1>
+            </div>
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-11 col-xl-9 col-xxl-8">
+                    <!-- Project Card 1-->
+                    <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                        <div class="card-body p-0">
+                            <div class="d-flex align-items-center">
+                                <div class="p-5">
+                                    <h2 class="fw-bolder">فیه ما فیه: شاهکار مولانا (رایگان)</h2>
+                                    <p>مجموعه کامل هفتاد فصل
+                                        <br>
+                                        کاملا رایگان
+                                        <br>
+                                        دارای 2 تم شب و روز
+                                        <br>
+                                        استفاده آسان
+                                        <br>
+                                        کم حجم
+                                        <br>
+                                        بیایید این شاهکار مولانا رو با هم بخونیم :)</p>
+                                    <a class="btn btn-success" href="https://cafebazaar.ir/app/app.molana" target="_blank">دانلود از کافه
+                                        بازار</a>
+                                </div>
+                                <img class="img-fluid w-25"
+                                     src="https://s.cafebazaar.ir/images/icons/app.molana-f33acc7e-d884-4391-8b70-4287fa876ffb_512x512.png?x-img=v1/format,type_webp,lossless_false/resize,h_256,w_256,lossless_false/optimize"
+                                     alt=""/>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Call to action section-->
+    <section class="py-5 bg-gradient-primary-to-secondary text-white">
+        <div class="container px-5 my-5">
+            <div class="text-center">
+                <h2 class="display-4 fw-bolder mb-4">بیا یه چیزی با همدیگه بسازیم!</h2>
+                <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" href="{% url 'home:contact_page' %}">تماس با من</a>
+            </div>
+        </div>
+    </section>
+
+{% endblock content %}
