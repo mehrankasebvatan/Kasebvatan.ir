@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <title>Galaxy - Personal Blog Template</title>
+
+    <!-- mobile responsive meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- theme meta -->
+    <meta name="theme-name" content="galaxy"/>
+
+    <!-- ** Plugins Needed for the Project ** -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="{% static 'blog/plugins/bootstrap/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/plugins/fontawesome/css/all.css' %}">
+
+    <!-- Main Stylesheet -->
+    <link href="{% static 'blog/css/style.css' %}" rel="stylesheet">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="{% static 'blog/images/favicon.png' %}" type="image/x-icon">
+    <link rel="icon" href="{% static 'blog/images/favicon.png' %}" type="image/x-icon">
+
+</head>
+<body class="d-flex flex-column h-100">
+<main class="flex-shrink-0">
+
+    {% include 'blog/header.html' %}
+
+    {% block content %}
+
+    {% endblock content %}
+
+</main>
+{% include 'blog/footer.html' %}
+</body>
+</html>
